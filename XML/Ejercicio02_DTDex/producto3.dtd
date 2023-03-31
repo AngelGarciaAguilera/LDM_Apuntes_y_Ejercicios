@@ -1,0 +1,13 @@
+<!ELEMENT lista (producto+)>
+<!ELEMENT producto (nombre, fabricante, precio+)>
+    <!ATTLIST producto referencia ID #REQUIRED>
+    <!ATTLIST producto color NMTOKEN #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fabricante (empresa, localidad?)>
+<!ELEMENT precio (#PCDATA)>
+    <!ATTLIST precio cliente (final|distribuidor) #REQUIRED>
+    <!ATTLIST precio moneda (euro|dolar) "euro">
+    <!ATTLIST precio iva CDATA #FIXED "18%">
+<!ELEMENT empresa (#PCDATA)>
+    <!ATTLIST empresa pais CDATA #IMPLIED>
+<!ELEMENT localidad (#PCDATA)>

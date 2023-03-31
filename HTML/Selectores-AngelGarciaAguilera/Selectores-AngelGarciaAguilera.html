@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Selectores avanzados</title>
+    <style>
+        table {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        tr, th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th{
+            background-color: rgb(237, 237, 237);
+        }
+        th.euro {
+        background: #E6F3FF url(euro.png) no-repeat left center;
+        padding: 0 .2em 0 1em;
+        }
+
+        th.dolar {
+        background: #E6F3FF url(dolar.png) no-repeat left center;
+        padding: 0 .2em 0 1em;
+        }
+
+        th.libra {
+        background: #E6F3FF url(libra.png) no-repeat left center;
+        padding: 0 .2em 0 1em;
+        }
+
+        th.yen {
+        background: #E6F3FF url(yen.png) no-repeat left center;
+        padding: 0 .2em 0 1em;
+        }
+
+        td {
+        text-align: right;
+        }
+
+        tr:nth-child(even) {
+        background-color: #FFFFCC;
+        }
+        /*El :nth-child() selecciona los elementos cuyo índice coincide con lo que se ha puesto entre paréntesis.
+        En este caso, es (even) para que seleccione los elementos que son pares.
+        
+        No uso una clase o un id porque daría conflicto al querer cambiarle el color con el :hover*/
+
+        #cambio:hover {
+        background: #FFFF66;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <tr>
+        <th>Cambio</th>
+        <th>Compra</th>
+        <th>Venta</th>
+        <th>Máximo</th>
+        <th>Mínimo</th>
+    </tr>
+    <tr id="cambio">
+        <th class="euro">Euro/Dolar</th>
+        <td>1.25</td>
+        <td>1.25</td>
+        <td>1.25</td>
+        <td>1.24</td>
+    </tr>
+    <tr id="cambio">
+        <th class="dolar">Dolar/Yen</th>
+        <td>119.01</td>
+        <td>119.05</td>
+        <td>119.82</td>
+        <td>119.82</td>
+    </tr>
+    <tr id="cambio">
+        <th class="libra">Libra/Dolar</th>
+        <td>1.86</td>
+        <td>1.86</td>
+        <td>1.86</td>
+        <td>1.85</td>
+    </tr>
+    <tr id="cambio">
+        <th class="yen">Yen/Euro</th>
+        <td>0.67</td>
+        <td>0.67</td>
+        <td>0.66</td>
+        <td>0.67</td>
+    </tr>
+    </table>
+</body>
+</html>

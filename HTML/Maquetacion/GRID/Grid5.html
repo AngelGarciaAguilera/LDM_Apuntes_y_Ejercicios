@@ -1,0 +1,41 @@
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 GRID</title>
+    <style>
+        .contenedor{
+            font-family:Tahoma;
+            display: grid;
+            grid-template-columns: repeat(4,100px);
+            grid-template-rows: repeat(2, 50px);
+            grid-template-areas: 
+            "uno uno uno dos" 
+            ". . . dos";
+            gap: 1px;
+        }
+        .contenedor > div{
+            background-color: rgb(107, 123, 133);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        #uno{
+            grid-area: uno;
+        }
+        #dos{
+            grid-area: dos;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="uno">celda 1</div>
+        <div id="dos">celda 2</div>
+        <div id="tres">celda 3</div>
+        <div id="cuatro">celda 4</div>
+        <div id="cinco">celda 5</div>
+    </div>
+</body>
+</html>

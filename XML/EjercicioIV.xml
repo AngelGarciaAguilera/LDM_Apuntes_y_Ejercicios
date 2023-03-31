@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listafacturas [
+<!ELEMENT listafacturas (factura+)>
+<!ELEMENT factura (emisor, pagador, importe)>
+    <!ATTLIST factura fecha CDATA #IMPLIED> <!--Con CDATA se puede poner cualquier tipo de caracteres especiales 
+        (en este caso tambien se puede con NMTOKEN, que también acepta caracteres especiales). 
+        #IMPLIED hace el atributo opcional.-->
+<!ELEMENT emisor (nombre, volumenventas?)>
+    <!ATTLIST emisor cif ID #REQUIRED> <!-- El ID distingue inequivocamente un elemento, este debe empezar por una letra.
+        #Con #REQUIRED el atributo es obligatorio.-->
+<!ELEMENT pagador (nombre, volumenventas?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT volumenventas (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+]>
+
+<listafacturas>
+    <factura fecha = "22-12-2021">
+        <emisor cif = "E1234">
+            <nombre>Ángel</nombre>
+            <volumenventas>3</volumenventas>
+        </emisor>
+        <pagador>
+            <nombre>Adrián</nombre>
+        </pagador>  
+        <importe>150€</importe>    
+    </factura>
+    <factura>
+        <emisor cif = "E5421">
+            <nombre>Juanje</nombre>
+        </emisor>
+        <pagador>
+            <nombre>Noelia</nombre>
+            <volumenventas>2</volumenventas>
+        </pagador>  
+        <importe>800€</importe>    
+    </factura>
+</listafacturas>

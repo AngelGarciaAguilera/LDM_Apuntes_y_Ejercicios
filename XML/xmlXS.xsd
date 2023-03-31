@@ -1,0 +1,18 @@
+parte del xml
+<?xml version="1.0" encoding="UTF-8"?>
+<elemento_raiz
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="nombre_archivo_xsd">
+
+parte del xsd
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name=".." minOccurs="las_que_sean" maxOccurs="unbounded">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="..." type="xs:..."></xs:element>
+            </xs:sequence>
+            <xs:attribute name="..." type="xs:..." use="required/optional"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listacompras [
+    <!ELEMENT listacompras (venta+)>
+    <!ELEMENT venta (ventacredito|ventainmediata)>
+    <!ELEMENT ventacredito (fechafinpago?, cantidad)>
+    <!ELEMENT ventainmediata (cantidad, divisa)>
+    <!ELEMENT fechafinpago (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT divisa (#PCDATA)>
+]>
+
+<listacompras>
+    <venta>
+        <ventacredito>
+            <fechafinpago>19-03-2022</fechafinpago>
+            <cantidad>55</cantidad>
+        </ventacredito>
+    </venta>
+    <venta>
+        <ventacredito>
+            <cantidad>60</cantidad>
+        </ventacredito>
+    </venta>
+    <venta>
+        <ventainmediata>
+            <cantidad>35</cantidad>
+            <divisa>EUR</divisa>
+        </ventainmediata>
+    </venta>
+</listacompras>

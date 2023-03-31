@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ebook</title>
+</head>
+<body>
+    <form action="post">
+        <div>
+            <p></p>
+            <label for="">Titulo</label>
+                <select name="raza" id="raza">Terra Alta
+                    <option value="Alien">Terra Alta</option>  
+                    <option value="Alien">La reina roja</option>  
+                    <option value="Alien">Solaris</option> 
+                </select>
+        </div>
+    <br>
+    <div>
+        <label for="">Días</label>
+        <input type="number" id="dias"> Precio: Euros
+    </div>
+    <div>
+            <p>
+            Observaciones <br>
+            <textarea name="observaciones" id="" cols="40" rows="5">Puedes anotar cualquier observación</textarea>
+            </p>
+    </div>
+    <div>
+        <p>
+            <label>Escribe la marca de tu Ebook:
+            <input list="ebooks" name="Ebook">
+            <datalist id="ebooks">
+                <option value="Xiaomi"></option>
+                <option value="Kobo"></option>
+                <option value="BQ"></option>
+              </datalist></label>
+        </p>
+    </div>
+    <div>
+        <p>
+            <input type="submit" name="Enviar" value="Enviar" onclick="operacion()">
+        </p>
+    </div>
+
+
+</body>
+</html>

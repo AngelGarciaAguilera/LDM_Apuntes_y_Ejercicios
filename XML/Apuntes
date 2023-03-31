@@ -1,0 +1,57 @@
+OPERADORES
+
+? -- 0..1
++ -- 1..n
+* -- 0..n
+
+| -- Or
+
+-----------------------------------------------------------------------------------------------------------------------
+
+ATRIBUTOS
+
+<!ATTLIST nombre_etiqueta nombre_atributo tipo_atributo valor_atributo>
+
+   .................................................................................................................
+    
+    VALORES
+
+    "CUALQUIER_TEXTO" --> Valor por defecto
+    #IMPLIED --> Opcional
+    #REQUIRED --> Obligatorio
+    #FIXED "..." --> Valor fijo
+
+   .................................................................................................................
+    
+    TIPOS
+
+    CDATA -- Texto
+        <!ATTLIST f1 pais CDATA "España">
+
+    Enumerado -- Valor perteneciente a una lista de valores escrito () y separados |
+        <!ATTLIST f1 pais (ESP | FRA | ITA | ALE) "ESP"> //El valor por defecto debe pertenecer a la lista.
+
+    ID -- Identificador único
+        <!ATTLIST f1 pais ID #REQUIRED> //Debe ser #IMPLIED o #REQUIRED
+
+    IDREF -- Identificador que tiene que existir en otro atributo ID, hace referencia a un ID
+        <!ATTLIST f1 pais IDREF #REQUIRED>
+
+    IDREFS -- Lista de valores que existan en otros IDs
+        <!ATTLIST f1 pais IDREFS #REQUIRED>
+
+    NMTOKEN -- Cadena de caracteres, pudiendo contener minúsculas, mayusculas, números, puntos, guiones y puntos dobles
+        <!ATTLIST f1 pais NMTOKEN #REQUIRED>
+
+    NMTOKENS -- Puede contener unos o varios valores de tipo NMTOKEN
+        <!ATTLIST f1 pais NMTOKENS #REQUIRED>
+
+    NOTATION -- Nombre de una notación
+        <!ATTLIST animal tipo_imagen NOTATION (jpg | gif | png) #IMPLIED>
+            <!NOTATION jpg SYSTEM "image/jpg"        
+            <!NOTATION gif SYSTEM "image/gif"
+            <!NOTATION png SYSTEM "image/png"
+
+    ENTITY -- Nombre de una entidad
+
+    ENTITIES -- Puede contener unos o varios valores de tipo ENTITY

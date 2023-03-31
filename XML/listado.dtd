@@ -1,0 +1,30 @@
+<!ELEMENT listado (futuro+, divisa+, bono+, letra+)>
+<!ELEMENT futuro (producto, mercado?, ciudad_procedencia)>
+    <!ATTLIST futuro precio CDATA #REQUIRED>
+<!ELEMENT divisa (nombre_divisa, tipo_de_cambio+, ciudad_procedencia)>
+    <!ATTLIST divisa precio CDATA #REQUIRED>
+    <!ATTLIST divisa estable (si|no) #IMPLIED>
+<!ELEMENT bono (pais_de_procedencia, valor_deseado, valor_minimo, valor_maximo, ciudad_procedencia)>
+    <!ATTLIST bono precio CDATA #REQUIRED>
+    <!ATTLIST bono estable (si|no) #IMPLIED>
+<!ELEMENT letra (tipo_de_interes, pais_emisor, ciudad_procedencia)>
+    <!ATTLIST letra precio CDATA #REQUIRED>
+<!ELEMENT pais_emisor (alemania|españa|eeuu|japon)>
+<!ELEMENT ciudad_procedencia (frankfurt|madrid|nueva_york|tokio)>
+<!ELEMENT producto (#PCDATA)>
+<!ELEMENT mercado (#PCDATA)>
+<!ELEMENT nombre_divisa (#PCDATA)>
+<!ELEMENT tipo_de_cambio (#PCDATA)>
+<!ELEMENT pais_de_procedencia (#PCDATA)>
+<!ELEMENT valor_deseado (#PCDATA)>
+<!ELEMENT valor_minimo (#PCDATA)>
+<!ELEMENT valor_maximo (#PCDATA)>
+<!ELEMENT tipo_de_interes (#PCDATA)>
+<!ELEMENT frankfurt EMPTY>
+<!ELEMENT madrid EMPTY>
+<!ELEMENT nueva_york EMPTY>
+<!ELEMENT tokio EMPTY>
+<!ELEMENT alemania EMPTY>
+<!ELEMENT españa EMPTY>
+<!ELEMENT eeuu EMPTY>
+<!ELEMENT japon EMPTY>

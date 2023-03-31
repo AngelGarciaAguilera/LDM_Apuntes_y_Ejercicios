@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productos [
+    <!ELEMENT productos (producto+)>
+    <!ELEMENT producto (raton|teclado|monitor)>
+    <!ELEMENT raton (codigo, nombre?, descripcion?)>
+    <!ELEMENT teclado (codigo, nombre?, descripcion?)>
+    <!ELEMENT monitor (codigo, nombre?, descripcion?)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+]>
+
+<productos>
+    <producto>
+        <raton>
+            <codigo>001</codigo>
+            <nombre>Logitech</nombre>
+        </raton>
+    </producto>
+    <producto>
+        <teclado>
+            <codigo>002</codigo>
+            <descripcion>Teclado en español</descripcion>
+        </teclado>
+    </producto>
+    <producto>
+        <monitor>
+            <codigo>003</codigo>
+        </monitor>
+    </producto>
+</productos>

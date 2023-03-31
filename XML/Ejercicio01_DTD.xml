@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE grupo [
+    <!ELEMENT grupo (alumno+)>
+    <!ELEMENT alumno (nombreCompleto, fila, edad)>
+        <!ATTLIST alumno colorPelo (rubio|castaño) #REQUIRED> <!-- (rubio|castaño) porque en todo el documento el atributo es rubio o castaño, 
+        no hay que suponer si puede haber otro más.-->
+    <!ELEMENT nombreCompleto (nombre, apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT fila (#PCDATA)>
+    <!ELEMENT edad EMPTY> <!-- EMPTY porque en todo el documento la edad está vacía.-->
+]>
+
+<grupo>
+    <alumno colorPelo="rubio">
+        <nombreCompleto>
+            <nombre>María</nombre>
+            <apellidos>López</apellidos>
+        </nombreCompleto>
+        <fila>1</fila>
+        <edad></edad>
+    </alumno>
+    <alumno colorPelo="castaño">
+        <nombreCompleto>
+            <nombre>Enrique</nombre>
+            <apellidos>Pérez</apellidos>
+        </nombreCompleto>
+        <fila>3</fila>
+        <edad></edad>
+    </alumno>
+    <alumno colorPelo="rubio">
+        <nombreCompleto>
+            <nombre>Aurora</nombre>
+            <apellidos>Alonso</apellidos>
+        </nombreCompleto>
+        <fila>2</fila>
+        <edad></edad>
+    </alumno>
+</grupo>

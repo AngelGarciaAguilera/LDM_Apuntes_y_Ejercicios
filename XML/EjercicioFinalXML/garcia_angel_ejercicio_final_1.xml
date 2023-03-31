@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedido SYSTEM "garcia_angel_ejercicio_final_1.dtd">
+<pedido>
+    <sucursal codigo_pedido="A1111111">
+        <datos></datos>
+        <direccion>C/Paloma, 3</direccion>
+        <articulo codigo="ABC-123">
+            <unidades>1</unidades>
+            <precio>10€</precio>
+            <observacion_articulo></observacion_articulo>
+        </articulo>
+        <nombre>Juan</nombre>
+        <observacion_pedido>Urgente</observacion_pedido>
+        <plazo_revision>15/02/2022</plazo_revision>
+    </sucursal>
+
+    <sucursal codigo_pedido="B2222222">
+        <datos></datos>
+        <direccion>C/Jilguero, 12</direccion>
+        <articulo codigo="CBA-321">
+            <unidades>2</unidades>
+            <precio>15€</precio>
+            <observacion_articulo></observacion_articulo>
+        </articulo>
+        <articulo codigo="ZZZ-999">
+            <unidades>1</unidades>
+            <precio>5€</precio>
+            <observacion_articulo></observacion_articulo>
+        </articulo>
+        <nombre>Lucía</nombre>
+        <plazo_revision>13/02/2022</plazo_revision>
+    </sucursal>
+</pedido>

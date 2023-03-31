@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listado SYSTEM "listado.dtd">
+<listado>
+    <futuro precio="15">
+        <producto>Té</producto>
+        <mercado>América Latina</mercado>
+        <ciudad_procedencia>
+            <madrid />
+        </ciudad_procedencia>
+    </futuro>
+    <futuro precio="25">
+        <producto>Chocolate</producto>
+        <ciudad_procedencia>
+            <frankfurt />
+        </ciudad_procedencia>
+    </futuro>
+    <divisa precio="183">
+        <nombre_divisa>Libra esterlina</nombre_divisa>
+        <tipo_de_cambio>2.7:1 euros</tipo_de_cambio>
+        <tipo_de_cambio>1:0.87 dolares</tipo_de_cambio>
+        <ciudad_procedencia>
+            <frankfurt />
+        </ciudad_procedencia>
+    </divisa>
+    <divisa precio="183" estable="no">
+        <nombre_divisa>Euro</nombre_divisa>
+        <tipo_de_cambio>2:2.06 dolares</tipo_de_cambio>
+        <ciudad_procedencia>
+            <madrid />
+        </ciudad_procedencia>
+    </divisa>
+    <bono precio="65" estable="si">
+        <pais_de_procedencia>Estados Unidos</pais_de_procedencia>
+        <valor_deseado>50</valor_deseado>
+        <valor_minimo>45</valor_minimo>
+        <valor_maximo>80</valor_maximo>
+        <ciudad_procedencia>
+            <nueva_york />
+        </ciudad_procedencia>
+    </bono>
+    <bono precio="5">
+        <pais_de_procedencia>España</pais_de_procedencia>
+        <valor_deseado>4</valor_deseado>
+        <valor_minimo>2.5</valor_minimo>
+        <valor_maximo>7</valor_maximo>
+        <ciudad_procedencia>
+            <madrid />
+        </ciudad_procedencia>
+    </bono>
+    <letra precio="37">
+        <tipo_de_interes>Interés fijo</tipo_de_interes>
+        <pais_emisor>
+            <japon />
+        </pais_emisor>
+        <ciudad_procedencia>
+            <tokio />
+        </ciudad_procedencia>
+    </letra>
+</listado>

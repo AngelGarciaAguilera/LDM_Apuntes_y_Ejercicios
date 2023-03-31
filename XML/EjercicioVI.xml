@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE operaciones [
+<!ELEMENT operaciones (operacion+)>
+<!ELEMENT operacion (venta?, compra?)+> <!-- También es posible (venta | compra)+ -->
+<!ELEMENT venta (titulosvendidos)>
+<!ELEMENT titulosvendidos (titulo+, cantidadvendidos, entregado?, importe)>
+<!ELEMENT compra (tituloscomprados)>
+<!ELEMENT tituloscomprados (titulo+, proveedor, fecha)> 
+<!ELEMENT fecha (dia, mes, año)> 
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT cantidadvendidos (#PCDATA)>
+<!ELEMENT entregado (#PCDATA)>
+<!ELEMENT proveedor (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+    <!ATTLIST importe moneda CDATA "€"> <!-- Lo que hay entre comillas es el valor por defecto de este atributo.-->
+]>
+
+<operaciones>
+    <operacion>
+        <venta>
+            <titulosvendidos>
+                <titulo>Quijote</titulo>
+                <titulo>Fuenteovejuna</titulo>
+                <cantidadvendidos>2</cantidadvendidos>
+                <entregado>Sí</entregado>
+                <importe>25</importe>
+            </titulosvendidos>
+        </venta>
+        <compra>
+            <tituloscomprados>
+                <titulo>Lazarillo de Tormes</titulo>
+                <proveedor>Papeleria Paqui</proveedor>
+                <fecha>
+                    <dia>07</dia>
+                    <mes>02</mes>
+                    <año>2017</año>
+                </fecha>
+            </tituloscomprados>
+        </compra>
+    </operacion>
+    <operacion>
+        <compra>
+            <tituloscomprados>
+                <titulo>...</titulo>
+                <proveedor>Ángel</proveedor>
+                <fecha>
+                    <dia>15</dia>
+                    <mes>11</mes>
+                    <año>2020</año>
+                </fecha>
+            </tituloscomprados>
+        </compra>
+    </operacion>
+    <operacion>
+        <venta>
+            <titulosvendidos>
+                <titulo>...</titulo>
+                <cantidadvendidos>1</cantidadvendidos>
+                <importe moneda = "$">10</importe>
+            </titulosvendidos>
+        </venta>
+    </operacion>
+</operaciones>

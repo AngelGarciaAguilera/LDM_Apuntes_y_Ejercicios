@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE marcadores [
+    <!ELEMENT marcadores (pagina)*>
+    <!ELEMENT pagina (nombre, descripcion, url)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+]>
+
+<marcadores>
+    <pagina>
+        <nombre>Google</nombre>
+        <descripcion>Buscador</descripcion>
+        <url>http://www.google.com</url>
+    </pagina>
+    <pagina>
+        <nombre>Yahoo</nombre>
+        <descripcion>Buscador</descripcion>
+        <url>http://www.yahoo.com</url>
+    </pagina>
+</marcadores>

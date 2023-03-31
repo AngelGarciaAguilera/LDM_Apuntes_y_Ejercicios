@@ -1,0 +1,8 @@
+h1{
+    font-size: 20px;
+    color: cornflowerblue;
+}
+label, input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

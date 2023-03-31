@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link href="prueba.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Texto</h1>
+    <form>
+        <label for="papellido">Primer apellido:</label> <!--En el for="" se le pone el id="" del <input> al que queremos asociarlo-->
+        <input type="text" id="papellido" name="papellido">
+        <br>
+        <label for="sapellido">Segundo apellido:</label>
+        <input type="text" id="sapellido" name="sapellido">
+        <br>
+    </form>
+    <br>
+    <h1>Selección Radio</h1>
+    <form>
+        <input type="radio" id="primera" name="selector" value="Primera">
+        <label for="primera">Primera opción.</label>
+        <br>
+        <input type="radio" id="segunda" name="selector" value="Segunda">
+        <label for="segunda">Segunda opción.</label>
+        <br>
+        <input type="radio" id="tercera" name="selector" value="Tercera">
+        <label for="tercera">Tercera opción.</label>
+        <p>Si los < input > tienen el mismo nombre solo se podrá seleccionar uno.</p>
+    </form>
+    <br>
+    <h1>Checkboxes</h1>
+    <form>
+        <input type="checkbox" id="primera" name="primera" value="Primera">
+        <label for="primera">Primera opción.</label>
+        <br>
+        <input type="checkbox" id="segunda" name="segunda" value="Segunda">
+        <label for="segunda">Segunda opción.</label>
+        <br>
+        <input type="checkbox" id="tercera" name="tercera" value="Tercera">
+        <label for="tercera">Tercera opción.</label>
+        <p>Se pueden seleccionar más de una opción. Aquí el name="" sí debe ser diferente.</p>
+    </form>
+    <br>
+    <h1>Selector</h1>
+    <form>
+        <label for="color">Elige un color: </label>
+        <select name="color" id="color">
+            <option>Rojo</option>
+            <option selected>Amarillo</option>
+            <option>Verde</option>
+        </select>
+    </form>
+    <br>
+    <h1>Text Area</h1>
+    <form>
+        <label for="reseña">Escribe una reseña: </label><br>
+        <textarea name="reseña" id="reseña" cols="25" rows="5" placeholder="Aquí va la reseña"></textarea>
+    </form>
+    <br>
+    <h1>Botón</h1>
+    <form>
+        <button type="button" onclick="alert('hola');">Alert</button>
+        <input type="button" value="Alert" onclick="alert('hola');">
+    </form>
+    <br>
+    <h1>Submit</h1>
+    <form>
+        <input type="submit" name="enviar" id="enviar" value="Enviar">        
+    </form>
+    <br>
+    <h1>Datalist</h1>
+    <form>
+        <input list="colores">
+        <datalist id="colores">
+            <option>Rojo</option>
+            <option>Amarillo</option>
+            <option>Verde</option>
+            <option>Azul</option>
+            <option>Morado</option>
+        </datalist>
+    </form>
+    <br>
+    <h1>Color</h1>
+    <form>
+        <input type="color" name="color">
+    </form>
+    <br>
+    <h1>Fecha</h1>
+    <form>
+        <input type="date" name="fecha">
+    </form>
+    <br>
+    <h1>Fecha y hora</h1>
+    <form>
+        <input type="datetime-local" name="fechayhora">
+    </form>
+    <br>
+    <h1>Fichero</h1>
+    <form>
+        <input type="file" name="fichero">
+    </form>
+    <br>
+    <h1>Número</h1>
+    <form>
+        <input type="number" name="num">
+    </form>
+    <br>
+    <h1>Fieldset</h1>
+    <form>
+        <fieldset>
+            <legend>Aquí se le pone un título</legend>
+            <input list="colores">
+            <datalist id="colores">
+                <option>Rojo</option>
+                <option>Amarillo</option>
+                <option>Verde</option>
+                <option>Azul</option>
+                <option>Morado</option>
+            </datalist>
+        </fieldset>
+    </form>
+</body>
+</html>

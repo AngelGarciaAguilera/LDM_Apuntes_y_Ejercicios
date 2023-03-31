@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca>
+<biblioteca>
+<ejemplar tipo_ejem="libro" titulo="XTML práctico" editorial="Ediciones Eni">
+<tipo><libro isbn="hola" edicion="1" paginas="347"></libro></tipo>
+<autor nombre="Wanwe"></autor>
+<autor nombre="ae" funcion="traductor"></autor>
+<prestado lector="Pepe">
+<fecha_pres dia="1" mes="marzo" año="2009"></fecha_pres>
+<fecha_del dia="1" mes="junio" año="2009"></fecha_del>
+</prestado>
+</ejemplar>
+</biblioteca>   

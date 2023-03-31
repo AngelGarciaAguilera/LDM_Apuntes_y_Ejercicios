@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" size="35px" name="nombre" id="nombre"><br>
+        <label for="nacido">Año de nacimiento: </label>
+        <input type="number" id="nacido" name="nacido" min="1990"><br>
+    <p>
+        <tr>
+            <td style="width: 10%;">
+                <label>Sexo:</label> 
+            </td>
+            <td>
+                <input type="radio" name="Varón">
+                <label>Hombre</label>      
+                <input type="radio" name="Hembra">
+                <label>Mujer</label>                        
+            </td>
+        </tr>
+    </p>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" name="enviar" value="Enviar" onclick="operacion()">
+                <input type="reset" name="Borrar" value="Borrar">
+            </td>
+        </tr>
+    </form>
+
+</body>
+</html>

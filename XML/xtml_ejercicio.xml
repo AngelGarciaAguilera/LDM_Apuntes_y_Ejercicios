@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE furbo>
+<furbo>
+<equipo>
+<nom_equipo>Real Madrid</nom_equipo>
+<ciudad>Madrid</ciudad>
+<entrenador></entrenador>
+<jugadores>
+<jugador posicion="delantero">
+<nombre>Wanwe</nombre>
+<nacionalidad>español</nacionalidad>
+</jugador>
+<jugador posicion="centrocampista">
+<nombre>ae</nombre>
+<nacionalidad>español</nacionalidad>
+</jugador>
+</jugadores>
+</equipo>
+
+<equipo>
+<nom_equipo>Real Betis Balonpie</nom_equipo>
+<ciudad>Sevilla</ciudad>
+<entrenador></entrenador>
+<jugadores>
+<jugador posicion="defensa">
+<nombre>Pepe</nombre>
+<nacionalidad>portugués</nacionalidad>
+</jugador>
+<jugador posicion="centrocampista">
+<nombre>Juanmi</nombre>
+<nacionalidad>español</nacionalidad>
+</jugador>
+</jugadores>
+</equipo>
+</furbo>   
