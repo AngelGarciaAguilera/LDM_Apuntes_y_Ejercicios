@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio - Maquetación GRID</title>
+    <style>
+        body{
+            background-color: #25282f;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        .contenedor{ 
+            position: fixed;
+            height: 100vh; 
+            width: 100vw; 
+            padding: 30px;          
+            display: grid;            
+            grid-template-columns: 15% 32% 15% 15% 15%; 
+            grid-template-rows: 14% 60% 14%;   
+            grid-template-areas: 
+            "unoR dosR unoA unoA unoA"
+            "unoAm dosR unoB unoB unoB"
+            "unoAm dosR dosB dosA dosAm";        
+            gap: 20px;
+        }
+        .rojo{
+            background-color: #b93e37;
+        }
+        .azul{
+            background-color: #2952ba;
+        }
+        .amarillo{
+            background-color: #d1ac39;
+        }
+        .blanco{
+            background-color: #fff;
+        }
+        #unoR{
+            grid-area: unoR;
+        }
+        #dosR{
+            grid-area: dosR;
+        }
+        #unoA{
+            grid-area: unoA;
+        }
+        #dosA{
+            grid-area: dosA;
+        }
+        #unoAm{
+            grid-area: unoAm;
+        }
+        #dosAm{
+            grid-area: dosAm;
+        }
+        #unoB{
+            grid-area: unoB;
+            text-align: right;
+            padding-top: 5%;
+            padding-left: 30%;
+            padding-right: 5%;
+        }
+        #dosB{
+            grid-area: dosB;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="unoR" class="rojo"></div>
+        <div id="dosR" class="rojo"></div>
+        <div id="unoA" class="azul"></div>
+        <div id="dosA" class="azul"></div>
+        <div id="unoAm" class="amarillo"></div>                
+        <div id="dosAm" class="amarillo"></div>
+        <div id="unoB" class="blanco">
+            <h1>Maquetación Grid</h1>
+            <p> La Maquetación Grid es un sistema de maquetación web basado en rejillas y celdas
+                que se caracteriza por ser bidimensional e independiente del orden del markup. Es,
+                además, un sistema extremadamente flexible.</p>
+        </div>                
+        <div id="dosB" class="blanco"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio CSS 1</title>
+    <style>
+        .contenedor{
+            padding: 100px;
+        }
+        .subcontenedor1{
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 150px);
+            grid-template-rows: repeat(2, 50px);
+            gap: 25px;
+            padding-bottom: 50px;
+        }
+        .subcontenedor1 div{
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px black solid;
+        }
+        #divA{
+            grid-column: 1/2;       
+            box-shadow: -3px -3px 0px black;  
+                    /*Valor en X; Valor en Y; Desplazamiento; Color*/   
+        }
+        #divB{
+            grid-column: 2/3;
+            box-shadow: -3px -3px 5px black;
+        }
+        #divC{
+            grid-column: 3/4;
+            box-shadow: -3px -3px 0px 3px black;
+                                     /*Esto lo vuelve a desplazar
+                                     en X para anular el desplazamiento anterior*/
+        }
+        #divD{
+            grid-column: 1/2;       
+            box-shadow: -3px -3px 5px 3px black;  
+        }
+        #divE{
+            grid-column: 2/3;
+            box-shadow: 0px 0px 5px black;
+        }
+        #divF{
+            grid-column: 3/4;
+            box-shadow: 0px 0px 1px 1px black;
+        }
+        .subcontenedor2{
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 150px);
+            grid-template-rows: repeat(2, 50px);
+            gap: 25px;
+        }
+        .subcontenedor2 div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ccc;
+            border: 1px black solid;
+        }
+        #divG{
+            grid-column: 1/2;       
+            box-shadow: 3px 3px 0px black;  
+        }
+        #divH{
+            grid-column: 2/3;
+            box-shadow: 3px 3px 5px black;
+        }
+        #divI{
+            grid-column: 3/4;
+            box-shadow: 3px 3px 0px 3px black;
+        }
+        #divJ{
+            grid-column: 1/2;       
+            box-shadow: 3px 3px 5px 3px black;  
+        }
+        #divK{
+            grid-column: 2/3;
+            box-shadow: 0px 0px 5px black;
+        }
+        #divL{
+            grid-column: 3/4;
+            box-shadow: 0px 0px 1px 1px black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="subcontenedor1">
+            <div id="divA">A</div>
+            <div id="divB">B</div>
+            <div id="divC">C</div>
+            <div id="divD">D</div>
+            <div id="divE">E</div>
+            <div id="divF">F</div>
+        </div>
+        <div class="subcontenedor2">
+            <div id="divG">G</div>
+            <div id="divH">H</div>
+            <div id="divI">I</div>
+            <div id="divJ">J</div>
+            <div id="divK">K</div>
+            <div id="divL">L</div>
+        </div>
+    </div>
+</body>
+</html>

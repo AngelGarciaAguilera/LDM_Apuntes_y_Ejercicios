@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio CSS 5</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+        }
+        .cuadrado{
+            height: 250px;
+            width: 150px;
+            margin-left: 50px;  
+            margin-top: 50px;         
+            background-color: rgb(35, 140, 181);  
+            transition: all 1s linear;                      
+        }
+        #rectangulo{
+            height: 250px;
+            width: 100px;
+            margin-left: 150px;
+            background-color: rgb(35, 140, 181);  
+            transition: all 1s ease-in-out;
+        }
+        .cuadrado:hover #rectangulo{
+            background-color: yellow;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="cuadrado">
+        <div id="rectangulo"></div>
+    </div>
+    
+</body>
+</html>

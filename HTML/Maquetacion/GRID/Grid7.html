@@ -1,0 +1,49 @@
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 GRID</title>
+    <style>
+        .contenedor{
+            font-family:Tahoma;
+            display: grid;
+            grid-template-columns: 100px 300px;
+            gap: 1px;
+        }
+        .contenedor > div{
+            background-color: rgb(107, 123, 133);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        #uno{
+            grid-column: 2/3;
+            background-color:coral;
+        }
+        #dos{
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        #tres{
+            grid-row: 2/3;
+            grid-column: 2/3;
+            text-align: left;
+        }
+        #cuatro{
+            grid-column: 1/3;
+            background-color: rgb(90, 90, 90);
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="uno">celda 1</div>
+        <div id="dos">celda 2</div>
+        <div id="tres">celda 3 <br>
+            Contenido que marca el alto de la parte central de la página.
+        </div>
+        <div id="cuatro">celda 4</div>
+    </div>
+</body>
+</html>

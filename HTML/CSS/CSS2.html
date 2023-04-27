@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio CSS 2</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .contenedor{
+            padding: 25px;
+            margin: 0 auto;
+            width: 1470px;
+            display: grid;
+            grid-template-columns: repeat(7, 180px);
+            grid-template-rows: repeat(2, 180px);
+            gap: 35px;
+        }
+        .contenedor div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 1s ease-in-out;
+        }
+        #scale{
+            background-color: rgb(192, 57, 43);
+            grid-column: 1/2;         
+        }
+        #scale:hover{
+            transform: scale(0.5);
+        }
+        #rotate{
+            background-color: rgb(155, 89, 182);
+            grid-column: 2/3;
+        }
+        #rotate:hover{
+            transform: rotate(360deg);
+        }
+        #translate{
+            background-color: rgb(41, 128, 185);            
+            grid-column: 3/4;
+        }
+        #translate:hover{
+            transform: translate(20px, 20px);
+        }
+        #skew{
+            background-color: rgb(52, 152, 219);            
+            grid-column: 4/5;       
+        }
+        #skew:hover{
+            transform: skew(20deg, 20deg);
+        }
+        #skewY{
+            background-color: rgb(23, 165, 137);
+            grid-column: 5/6;
+        }
+        #skewY:hover{
+            transform: skewY(20deg);
+        }
+        #skewX{
+            background-color: rgb(241, 196, 15);
+            grid-column: 6/7;
+        }
+        #skewX:hover{
+            transform: skewX(20deg);
+        }
+        #translateX{
+            background-color: rgb(230, 126, 34);
+            grid-column: 7/8;
+        }
+        #translateX:hover{
+            transform: translateX(20px);
+        }
+        #translateY{
+            background-color: rgb(149, 165, 166);            
+        }
+        #translateY:hover{
+            transform: translateY(20px);
+        }
+        #perspective-rotate1{
+            background-color: rgb(44, 62, 80);
+        }
+        #perspective-rotate1:hover{
+            transform: perspective(150px) rotateX(45deg);
+        }
+        #perspective-rotate2{
+            background-color: rgb(128, 128, 128);
+        }
+        #perspective-rotate2:hover{
+            transform: perspective(150px) rotateY(45deg);
+        }
+        #matrix{
+            background-color: rgb(0, 0, 0);
+        }
+        #matrix:hover{
+            transform: matrix(0.5, 0.1, 0.5, 1, 0, 0);
+            /*matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="scale">Scale</div>
+        <div id="rotate">Rotate</div>
+        <div id="translate">Translate</div>
+        <div id="skew">Skew</div>
+        <div id="skewY">SkewY</div>
+        <div id="skewX">SkewX</div>
+        <div id="translateX">TranslateX</div>
+        <div id="translateY">TranslateY</div>
+        <div id="perspective-rotate1">Perspective rotate</div>
+        <div id="perspective-rotate2">Perspective rotate</div>
+        <div id="matrix">Matrix</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+    <style>
+        body{
+            background-color: rgb(182, 182, 182);
+        }
+        #formulario{
+            background-color: white;
+            width: 1500px;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .cajas{
+            border-top: 1px solid black;
+            padding-top: 15px;
+        }
+        .titulo{
+            padding-right: 15px;
+            width: 500px;
+            height: 500px;
+        }
+        .contenido{     
+            padding-top:20px;
+            width: 900px;
+        }
+        p{
+            text-align: right;
+            font-weight: bold;
+        }
+        input{
+           width: 400px; 
+           border: 1px solid white;           
+           border-bottom: 1px solid black;
+        }
+        #nombre{
+            width: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <h1>Formulario de registro</h1> 
+        <div class="cajas">
+            <form action="">
+            <div class="titulo">
+                <p>Nombre y apellidos</p>
+            </div>
+            <div class="contenido">
+                <input type="text" id="nombre" name="nombre">
+                <br>
+                <label for="nombre">Nombre</label>
+                <br><br>
+                <input type="text" id="papellido" name="papellido">
+                <br>
+                <label for="papellido">Primer apellido</label> <!--En el for="" se le pone el id="" del <input> al que queremos asociarlo-->                
+                <br><br>
+                <input type="text" id="sapellido" name="sapellido">
+                <br>
+                <label for="sapellido">Segundo apellido</label>                
+                <br><br>
+            </div>
+            <div class="titulo">
+                <p>Dirección</p>
+            </div>
+            <div class="contenido">
+                <input type="text" id="nombre" name="nombre">
+                <br>
+                <label for="nombre">Nombre</label>
+                <br><br>
+                <input type="text" id="papellido" name="papellido">
+                <br>
+                <label for="papellido">Primer apellido</label> <!--En el for="" se le pone el id="" del <input> al que queremos asociarlo-->                
+                <br><br>
+                <input type="text" id="sapellido" name="sapellido">
+                <br>
+                <label for="sapellido">Segundo apellido</label>                
+                <br><br>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

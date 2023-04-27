@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio CSS 3</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .contenedor{
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 200px;
+            grid-template-rows: repeat(5, 100px);
+            gap: 35px;
+        }
+        .contenedor div{
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            width: 200px;
+            background-color: rgb(249, 38, 114);            
+        }
+        #linear:hover{
+            transition: all 1.5s linear;            
+            background-color: rgb(11, 86, 225);
+            width: 450px;
+        }
+        #ease:hover{
+            transition: all 1.5s ease;            
+            background-color: rgb(11, 86, 225);
+            width: 450px;
+        }
+        #ease-in:hover{
+            transition: all 1.5s ease-in;            
+            background-color: rgb(11, 86, 225);
+            width: 450px;
+        }
+        #ease-out:hover{
+            transition: all 1.5s ease-out;            
+            background-color: rgb(11, 86, 225);
+            width: 450px;
+        }
+        #ease-in-out:hover{
+            transition: all 1.5s ease-in-out;            
+            background-color: rgb(11, 86, 225);
+            width: 450px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="linear">linear</div>
+        <div id="ease">ease</div>
+        <div id="ease-in">ease-in</div>
+        <div id="ease-out">ease-out</div>
+        <div id="ease-in-out">ease-in-out</div>
+    </div>
+</body>
+</html>
