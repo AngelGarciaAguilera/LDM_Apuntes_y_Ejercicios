@@ -7,22 +7,22 @@ body{
 }
 header{
     display: flex;
-    background-color: #9c9abe;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
+    background-color: #9c9abe;       
     color: white; 
 }
 .logo{
-    width: 15em;
-    height: 10em;
+    width: 8em;
+    height: 5em;
 }
 nav{
-    display: inline;
-    justify-items: center;
-    width: 15em;
+    display: flex;
+    justify-content: space-between;
+    width: 20em;
 }
 .header-derecha{
-    width: 15em;
+    width: 15em;  
 }
 img{
     width: 100%;

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-
+    wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+    crossorigin="anonymous">
+    <title>Formulario BOOTSTRAP</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="mt-4 mb-3">
+                <label for="nombre" class="form-label">Introduce tu nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" style="background-color: rgba(235, 235, 235, 0.624);">     
+                <div class="form-text">Introduce tu nombre de pila</div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox">
+                <label for="checkbox" class="form-check-label">¿Eres mayor de edad?</label>
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Introduce tu apellido:</label>
+                <input type="text" class="form-control-plaintext" id="apellido" name="apellido" value="Villar" style="border: 0px;" >     
+                <div class="form-text">Introduce tu apellido</div>
+            </div>
+            <div class="mb-3">
+                <label for="archivo" class="form-label">Por defecto</label>
+                <input class="form-control" type="file" id="archivo">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="email" name="email" value="email@inventado.com" style="background-color: rgba(235, 235, 235, 0.624); height: 2em;">     
+                <div class="form-text">Nunca compartiremos tu email con nadie.</div>
+            </div>
+            <div class="mb-3">
+                <label for="passwd" class="form-label">Password</label>
+                <input type="password" class="form-control" id="passwd" name="passwd">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkme" name="checkme">
+                <label for="checkme" class="form-check-label">Check me out</label>
+            </div>
+            <div class="mb-3">
+                <input type="color" class="form-control" id="color" name="color" style="height: 2.5em; width: 3em; background-color: white; padding: 0.4em;">
+            </div>
+            <div class="mb-3">
+                <label for="selciudad" class="form-label">Selecciona tu ciudad</label>
+                <input list="ciudad" type="search" class="form-control" id="selciudad" name="selciudad" placeholder="Type to search...">
+                <datalist id="ciudad">
+                    <option>Málaga</option>
+                    <option>Granada</option>
+                    <option>Sevilla</option>
+                    <option>Córdoba</option>
+                    <option>Cádiz</option>
+                    <option>Jaén</option>
+                    <option>Huelva</option>
+                    <option>Almería</option>
+                </datalist>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
