@@ -1,90 +1,193 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+
 <head>
     <meta charset="UTF-8">
     <title>Formulario de registro</title>
     <style>
-        body{
+        body {
             background-color: rgb(182, 182, 182);
         }
-        #formulario{
+
+        #formulario {
             background-color: white;
-            width: 1500px;
+            width: 70em;
             margin: 0 auto;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 0.7em;
+            padding-right: 0.7em;
         }
-        .cajas{
-            border-top: 1px solid black;
-            padding-top: 15px;
+
+        .bloques {
+            border-top: 0.15em solid rgba(101, 101, 101, 0.153);
+            display: inline-flex;
+            width: 70em;
         }
-        .titulo{
-            padding-right: 15px;
-            width: 500px;
-            height: 500px;
+
+        .bloques:hover {
+            background-color: rgba(228, 228, 228, 0.676);
         }
-        .contenido{     
-            padding-top:20px;
-            width: 900px;
+
+        .titulo {
+            padding-right: 1em;
+            width: 15em;
+            color: rgb(0, 123, 194);
         }
-        p{
+
+        .contenido {
+            padding-top: 2em;
+            width: 54em;
+        }
+
+        p {
             text-align: right;
             font-weight: bold;
         }
-        input{
-           width: 400px; 
-           border: 1px solid white;           
-           border-bottom: 1px solid black;
+
+        input, select {
+            width: 30em;
+            border: 0.1em solid white;
+            border-bottom: 0.2em solid rgba(12, 166, 255, 0.688);
+            margin-bottom: 0.3em;
+            background-color: white;
         }
-        #nombre{
-            width: 250px;
+
+        input:focus, select:focus {
+            outline: none;
+            /*Esto es para que el borde que pone el navegador al clicar en el input no exista.*/
+            border: 0.15em solid rgba(51, 178, 251, 0.688);
+            box-shadow: 0.1em 0.1em 0.1em black;
         }
-        
+
+        .btn{
+            display: block;
+            margin-right: 0;
+            margin-left: auto;
+            margin-top: 1em;
+            border: 0.15em solid rgb(0, 123, 194);
+            border-radius: 0.5em;
+            background-color: rgb(12, 166, 255);
+            font-weight: bold;
+            color: white;
+        }
+
+        .btn:hover{
+            cursor: pointer;
+            border: 0.15em solid rgb(12, 166, 255);
+            background-color: rgba(51, 178, 251, 0.688);
+        }
     </style>
 </head>
+
 <body>
     <div id="formulario">
-        <h1>Formulario de registro</h1> 
+        <h1>Formulario de registro</h1>
         <div class="cajas">
             <form action="">
-            <div class="titulo">
-                <p>Nombre y apellidos</p>
-            </div>
-            <div class="contenido">
-                <input type="text" id="nombre" name="nombre">
-                <br>
-                <label for="nombre">Nombre</label>
-                <br><br>
-                <input type="text" id="papellido" name="papellido">
-                <br>
-                <label for="papellido">Primer apellido</label> <!--En el for="" se le pone el id="" del <input> al que queremos asociarlo-->                
-                <br><br>
-                <input type="text" id="sapellido" name="sapellido">
-                <br>
-                <label for="sapellido">Segundo apellido</label>                
-                <br><br>
-            </div>
-            <div class="titulo">
-                <p>Dirección</p>
-            </div>
-            <div class="contenido">
-                <input type="text" id="nombre" name="nombre">
-                <br>
-                <label for="nombre">Nombre</label>
-                <br><br>
-                <input type="text" id="papellido" name="papellido">
-                <br>
-                <label for="papellido">Primer apellido</label> <!--En el for="" se le pone el id="" del <input> al que queremos asociarlo-->                
-                <br><br>
-                <input type="text" id="sapellido" name="sapellido">
-                <br>
-                <label for="sapellido">Segundo apellido</label>                
-                <br><br>
-            </div>
+                <div class="bloques">
+                    <div class="titulo">
+                        <p>Nombre y apellidos</p>
+                    </div>
+                    <div class="contenido">
+                        <input type="text" id="nombre" name="nombre" style="width: 20em;">
+                        <br>
+                        <label for="nombre">Nombre</label>
+                        <br><br>
+                        <input type="text" id="papellido" name="papellido">
+                        <br>
+                        <label for="papellido">Primer apellido</label>
+                        <!--En el for="" se le pone el id="" del <input> al que queremos asociarlo-->
+                        <br><br>
+                        <input type="text" id="sapellido" name="sapellido">
+                        <br>
+                        <label for="sapellido">Segundo apellido</label>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="bloques">
+                    <div class="titulo">
+                        <p>Dirección</p>
+                    </div>
+                    <div class="contenido">
+                        <input type="text" id="calle" name="calle">
+                        <br>
+                        <label for="calle">Calle, número, piso, puerta</label>
+                        <br><br>
+                        <div style="display: inline-flex;">
+                            <div style="width: 17em;">
+                                <input type="text" id="cp" name="cp" style="width: 10em;">
+                                <br>
+                                <label for="cp">Código postal</label>
+                                <br><br>
+                            </div>
+                            <div style="width: 37em;">
+                                <input type="text" id="municipio" name="municipio" style="width: 20em;">
+                                <br>
+                                <label for="municipio">Municipio</label>
+                                <br><br>
+                            </div>
+                        </div>
+                        <div style="display: inline-flex;">
+                            <div style="width: 17em;">
+                                <select id="provincia" name="provincia" style="width: 10em;">
+                                    <option selected disabled hidden></option>
+                                    <option>Málaga</option>
+                                    <option>Granada</option>
+                                    <option>Cádiz</option>
+                                    <option>Córdoba</option>
+                                </select>
+                                <br>
+                                <label for="provincia">Provincia</label>
+                                <br><br>
+                            </div>
+                            <div style="width: 37em;">
+                                <select id="pais" name="pais" style="width: 15em;">
+                                    <option selected disabled hidden></option>
+                                    <option>España</option>
+                                    <option>Portugal</option>
+                                    <option>Alemania</option>
+                                    <option>Italia</option>
+                                </select>
+                                <br>
+                                <label for="pais">País</label>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloques">
+                    <div class="titulo">
+                        <p>Email</p>
+                    </div>
+                    <div class="contenido">
+                        <input type="text" id="email" name="email">
+                        <br><br>
+                    </div>
+                </div>
+                <div class="bloques" style="border-bottom: 0.15em solid rgba(101, 101, 101, 0.153);">
+                    <div class="titulo">
+                        <p>Teléfono</p>
+                    </div>
+                    <div class="contenido" style="display: inline-flex;">
+                        <div style="width: 27em;">
+                            <input type="text" id="fijo" name="fijo" style="width: 15em;">
+                            <br>
+                            <label for="fijo">Fijo</label>
+                            <br><br>
+                        </div>
+                        <div style="width: 27em;">
+                            <input type="text" id="movil" name="movil" style="width: 15em;">
+                            <br>
+                            <label for="movil">Móvil</label>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn" type="submit">Registrarse</button>
             </form>
         </div>
     </div>
 </body>
+
 </html>

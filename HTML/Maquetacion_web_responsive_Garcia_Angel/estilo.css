@@ -1,46 +1,176 @@
-body{
-    font-family: 'Righteous' cursive;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 90%;
+@media screen and (min-width: 992px){
+    body{
+        font-family: 'Righteous', cursive;
+        font-size: 1.6em;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #9c9abe;       
+        color: white; 
+    }
+    .logo{
+        width: 8em;
+        height: 5em;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1em;
+        width: 18em;
+    }
+    .header-derecha{
+        padding-top: 1em;
+        padding-right: 1.5em;
+        width: 5em;  
+        text-align: end;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .bloque{
+        background-color: #c8c8c8;
+        display: inline-flex;
+        padding: 1.5em 1.5em 1.5em 2em;
+    }
+    .inf-text{
+        width: 50%;
+    }
+    .inf-img{
+        width: 50%;
+        height: 100%;
+        display: inline-flex;
+        border: 0.5em white solid;
+    }
+    .galeria{
+        margin: 1em 8em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5em;
+    }
+    #img1{
+        grid-column: 1/2;
+    }
+    #img2{
+        grid-column: 2/4;
+    }
+    #img3{
+        grid-column: 1/3;
+    }
+    #img4{
+        grid-column: 3/4;
+    }
+    #img5{
+        grid-column: 1/2;
+    }
+    #img6{
+        grid-column: 2/4;
+    }
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #9c9abe;       
-    color: white; 
+@media screen and (min-width: 576px) and (max-width: 992px){
+    body{
+        font-family: 'Righteous', cursive;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #9c9abe;       
+        color: white; 
+    }
+    .logo{
+        width: 8em;
+        height: 5em;
+        float: left;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 18em;
+        margin-right: 0.5em;
+    }
+    .header-derecha{
+        display: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .bloque{
+        background-color: #c8c8c8;
+        display: inline-flex;
+        padding: 1.5em 1.5em 1.5em 2em;
+    }
+    .inf-text{
+        width: 50%;
+    }
+    .inf-img{
+        width: 50%;
+        height: 100%;
+        display: inline-flex;
+        border: 0.5em white solid;
+    }
+    .galeria{
+        margin: 0.5em 4em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5em;
+    }
 }
-.logo{
-    width: 8em;
-    height: 5em;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 20em;
-}
-.header-derecha{
-    width: 15em;  
-}
-img{
-    width: 100%;
-    height: 100%;
-}
-.bloque{
-    background-color: #c8c8c8;
-    display: inline-flex;
-    width: 104em;
-    padding: 3em 1em 3em 3em;
-    
-}
-.inf-text{
-    width: 60em;
-    margin: 0 auto;
-}
-.inf-img{
-    width: 40em;
-    border: 1em white solid;
-    margin: 0 auto;
+
+@media screen and (max-width: 576px){
+    body{
+        font-family: 'Righteous', cursive;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #9c9abe;       
+        color: white; 
+    }
+    .logo{
+        width: 8em;
+        height: 5em;
+        float: left;
+    }
+    nav{
+        margin-right: 0.1em;
+    }
+    .menu_item{
+        padding: 0.5em;
+    }
+    .header-derecha{
+        display: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .bloque{
+        background-color: #c8c8c8;
+        display: inline-flex;
+        padding: 1em;
+    }
+    .inf-img{
+        display: none;
+    }
+    .galeria{
+        margin: 0.5em 3em;
+
+    }
 }
