@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+    <style>
+        body {
+            background-color: rgb(182, 182, 182);
+            font-family: Arial, Helvetica, 'sans-serif';
+        }
+
+        #formulario {
+            background-color: white;
+            width: 70em;
+            margin: 0 auto;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 0.7em;
+            padding-right: 0.7em;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            font-family: Georgia, 'serif';
+        }
+
+        .bloques {
+            border-top: 0.15em solid rgba(101, 101, 101, 0.153);
+            display: inline-flex;
+            width: 70em;
+        }
+
+        .bloques:hover {
+            background-color: rgba(228, 228, 228, 0.676);
+        }
+
+        .titulo {
+            padding-right: 1em;
+            width: 15em;
+            color: rgb(0, 123, 194);
+        }
+
+        .contenido {
+            padding-top: 2em;
+            width: 54em;
+        }
+
+        fieldset {
+            border: 0.2em solid rgb(0, 123, 194);
+            padding: 1em;
+            margin-top: 1em;
+        }
+
+        legend, label, p {
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 15em;
+            border: 0.1em solid white;
+            border: 0.2em solid rgba(12, 166, 255, 0.688);
+            margin-bottom: 0.7em;
+            background-color: white;            
+        }
+
+        input[type="text"]:hover,
+        input[type="date"]:hover,
+        input[type="password"]:hover,
+        select:hover {
+            background-color: rgba(224, 224, 224, 0.448);
+        }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        input[type="password"]:focus,
+        select:focus {
+            outline: none;
+            /*Esto es para que el borde que pone el navegador al clicar en el input no exista.*/
+            border: 0.15em solid rgba(51, 178, 251, 0.688);
+            box-shadow: 0.1em 0.1em 0.1em black;
+            background-color: rgba(197, 234, 255, 0.448);
+        }
+
+        .btn {
+            display: block;
+            width: 8em;
+            height: 2em;
+            margin-right: 0.15em;
+            margin-left: auto;
+            margin-top: 1em;
+            border: 0.15em solid rgb(0, 123, 194);
+            background-color: rgb(12, 166, 255);
+            font-size: large;
+            font-weight: bold;
+            color: white;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            border: 0.15em solid rgb(12, 166, 255);
+            background-color: rgba(51, 178, 251, 0.688);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="formulario">
+        <h1>Web corporativa de la Estrella de la muerte</h1>
+        <h3>Formulario de registro</h3>
+        <form>
+            <fieldset>
+                <legend>¿QUIÉN ERES?</legend>
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <br>
+                <input type="text" name="apellidos" id="apellidos">
+                <br>
+                <label for="correo">Correo electrónico</label>
+                <br>
+                <input type="text" name="correo" id="correo">
+                <br>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <br>
+                <input type="date" name="nacimiento" id="nacimiento">
+            </fieldset>
+            <fieldset>
+                <legend>¿DE DÓNDE ERES?</legend>
+                <label for="ciudad">Ciudad</label>
+                <br>
+                <input type="text" name="ciudad" id="ciudad">
+                <br>
+                <label for="cp">Código postal</label>
+                <br>
+                <input type="text" name="cp" id="cp">
+                <br>
+                <label for="pais">País</label>
+                <br>
+                <select id="pais" name="pais" style="width: 5em;">
+                    <option selected disabled hidden></option>
+                    <option>España</option>
+                    <option>Portugal</option>
+                    <option>Alemania</option>
+                    <option>Italia</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>¿CÓMO QUIERES INICIAR SESIÓN?</legend>
+                <label for="usuario">Nombre de usuario</label>
+                <br>
+                <input type="text" name="usuario" id="usuario">
+                <br>
+                <label for="passwd">Contraseña</label>
+                <br>
+                <input type="password" name="passwd" id="passwd">
+                <br>
+                <label for="passwd2">Repite la contraseña</label>
+                <br>
+                <input type="password" name="passwd2" id="passwd2">
+            </fieldset>
+            <fieldset>
+                <legend>CONDICIONES DE REGISTRO</legend>
+                <p style="margin: 0;">Deseo recibir nuestra newslwtter mensual</p>
+                <input type="radio" id="email" name="selector" style="width: 1em;">
+                <label for="email">Por correo electrónico.</label>
+                <input type="radio" id="ce" name="selector" style="width: 1em;">
+                <label for="ce">Por correo espacial.</label>
+                <input type="radio" id="telepatico" name="selector" style="width: 1em;">
+                <label for="telepatico">Telepáticamente empleando la fuerza.</label>
+                <br>
+                <input type="checkbox" id="priv" name="priv" style="width: 1em;">
+                <label for="priv">Acepto los términos.</label>
+            </fieldset>
+            <button class="btn" type="submit">Crear cuenta</button>
+        </form>
+    </div>
+</body>
+</html>
