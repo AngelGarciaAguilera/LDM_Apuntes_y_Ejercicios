@@ -1,0 +1,351 @@
+@media screen and (min-width: 992px) {
+    body {
+        font-family: 'Quicksand' sans-serif;
+        color: white;
+        width: 99vw;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+
+    header {
+        background-color: #333;
+        padding: 1.5em 0em;
+    }
+
+    .portada {
+        display: flex;
+        background-image: url(001.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        align-items: center;
+        height: 22em;
+    }
+
+    #portada-hola {
+        font-size: 8.5em;
+        padding: 0em 0.5em;
+    }
+
+    #portada-text {
+        width: 55%;
+    }
+
+    .galeria-texto {
+        color: black;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        width: 70%;
+        margin: 3em auto;
+    }
+
+    #div-uno {
+        background-image: url(002.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #uno {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-dos {
+        background-image: url(003.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #dos {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-tres {
+        background-image: url(004.jpg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        padding-top: 10em;
+    }
+
+    #tres {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-cuatro {
+        background-image: url(005.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #cuatro {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-cinco {
+        background-image: url(006.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #cinco {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-seis {
+        background-image: url(007.jpg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        padding-top: 10em;
+    }
+
+    #seis {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        font-family: 'Quicksand' sans-serif;
+        color: white;
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    header {
+        background-color: #333;
+        padding: 1.5em 0em;
+        margin: 0;
+    }
+
+    .portada {
+        display: flex;
+        background-image: url(001.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 120%;
+        height: 22em;
+    }
+
+    #portada-hola {
+        font-size: 6.5em;
+        padding: 1.2em 0.1em;
+    }
+
+    #portada-text {
+        display: none;
+    }
+
+    .galeria-texto {
+        color: black;
+        font-weight: bold;
+        margin: 1em auto;
+    }
+
+    #div-uno {
+        background-image: url(002.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #uno {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-dos {
+        background-image: url(003.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #dos {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-tres {
+        background-image: url(004.jpg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        padding-top: 10em;
+    }
+
+    #tres {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-cuatro {
+        background-image: url(005.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #cuatro {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-cinco {
+        background-image: url(006.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #cinco {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-seis {
+        background-image: url(007.jpg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        padding-top: 10em;
+    }
+
+    #seis {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    body {
+        font-family: 'Quicksand' sans-serif;
+        color: white;
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+
+    header {
+        background-color: #333;
+        padding: 1.5em 0em;
+    }
+
+    .portada {
+        display: flex;
+        background-image: url(001.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        align-items: center;
+        height: 22em;
+    }
+
+    #portada-hola {
+        font-size: 6.5em;
+        padding: 0em 0.5em;
+    }
+
+    #portada-text {
+        width: 55%;
+    }
+
+    .galeria-texto {
+        color: black;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        margin: 3em auto;
+    }
+
+    #div-uno {
+        background-image: url(002.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #uno {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-dos {
+        background-image: url(003.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #dos {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-tres {
+        background-image: url(004.jpg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        padding-top: 10em;
+    }
+
+    #tres {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-cuatro {
+        background-image: url(005.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #cuatro {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-cinco {
+        background-image: url(006.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-top: 10em;
+    }
+
+    #cinco {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+
+    #div-seis {
+        background-image: url(007.jpg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        padding-top: 10em;
+    }
+
+    #seis {
+        background-color: rgba(166, 166, 166, 0.403);
+        padding: 0.3em;
+    }
+}
