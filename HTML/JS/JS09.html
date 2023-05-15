@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <script>
+        var contenido = "";
+        var caracteresPermitidos = 100;
+
+        function validar() {
+            //Al elemento llamado 'ta' del form le pido lo que contiene y cuento los caracteres.
+            //Eso lo guardo en una variable.
+            var numCaracteres = document.forms[0].ta.value.length;
+            //Si el número de caracteres introducidos es mayor de 100...
+            if (numCaracteres > caracteresPermitidos) {
+                //Al elemento 'ta' del form le pongo el contenido que tenía.
+                document.forms[0].ta.value = contenido;
+            } else {
+                //Si no...
+                //El contenido es el introducido en el TextArea
+                contenido = document.forms[0].ta.value;
+            }
+            //Ejecuto la función contar()
+            contar();
+        }
+
+        function contar() {
+            //Al elemento del form llamado 'caracteres' le pongo el número de caracteres que contiene el TextArea.
+            document.forms[0].caracteres.value = document.forms[0].ta.value.length;
+        }      
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="ta">TextArea: </label>
+        <br>
+        <textarea name="ta" id="ta" cols="30" rows="5" onKeyDown="validar()" onKeyUp="validar()"></textarea>
+        <br>
+        <input type="text" name="caracteres" size="4" disabled>
+    </form>
+</body>
+
+</html>

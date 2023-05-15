@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+    <script>
+        function factorial() {
+            //El factorial de un número se obtiene al multiplicar todos los números 
+            //(incluido este) que hay hasta llegar al uno.
+            //Ejemplo: 5!=5x4x3x2x1
+            var resultado = 1;
+            var numero = prompt("Introduce un número:");
+            if (Number(numero) == numero) {
+                //Lo hago número
+                numero = Number(numero);
+                for (var i = numero; i > 0; i--) {
+                    resultado = resultado * i;
+                }
+                document.write("El factorial de " + numero + " = " + resultado);
+            }
+            else {
+                if (numero != undefined) {
+                    alert("El valor introducido no es un número.");
+                }
+            }
+        }       
+    </script>
+</head>
+
+<body>
+    <button onclick="factorial()">Calcular factorial</button>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script>
+        function concatenacion(){
+            var concatenacion = "";
+            do{
+                var texto = prompt("Introduce texto:"); 
+                if(texto != null){
+                    if(concatenacion == ""){
+                        concatenacion = concatenacion + texto;
+                    }
+                    else{
+                        concatenacion = concatenacion + '-' + texto;
+                    }
+                }  
+                //Con esto controlo que al Cancelar no se incluya -null al final de la cadena.             
+                else{
+                    break;
+                }
+            }while(texto != undefined);
+            document.write(concatenacion);
+        }       
+    </script>
+</head>
+<body>
+    <button onclick="concatenacion()">Comprobar</button>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function nota() {
+            do {
+                var num = prompt("Introduce tu nota: ");
+                if(num == undefined){
+                    alert("Ta lueg");
+                }
+                else if (num < 0) {
+                    alert("¿Menos de un cero? Onde vaaaa");
+                }
+                else if (num < 4) {
+                    alert("Muy deficiente.");
+                }
+                else if (num < 5) {
+                    alert("Tienes un insuficiente");
+                }
+                else if (num < 6) {
+                    alert("Tienes un suficiente");
+                }
+                else if (num < 7) {
+                    alert("Tienes un bien");
+                }
+                else if (num < 9) {
+                    alert("Tienes un notable");
+                }
+                else if (num > 10) {
+                    alert("Tas pasao");
+                }
+                else if (isNaN(num)) {
+                    alert("Eso no es un número >:(");
+                }                
+                else {
+                    alert("Tienes un sobresaliente");
+                }
+            } while (num != undefined);
+        }
+    </script>
+</head>
+
+<body>
+    <button id="btn" onclick="nota()">Haz clic para introducir tu nota :)</button>
+</body>
+
+</html>

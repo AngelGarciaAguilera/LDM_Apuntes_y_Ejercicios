@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+    <script>
+        function comprobar() {
+            var numero = prompt("Introduce un número:");
+            if (Number(numero) == numero) {
+                //Lo hago número
+                numero = Number(numero);
+                if(numero%2 == 0){
+                    alert(numero + " es Par.");
+                }else{
+                    alert(numero + " es Impar.");
+                }                
+            }
+            else {
+                if (numero != undefined) {
+                    alert("El valor introducido no es un número.");
+                }
+            }
+        }       
+    </script>
+</head>
+
+<body>
+    <button onclick="comprobar()">Comprobar Par o Impar</button>
+</body>
+
+</html>
