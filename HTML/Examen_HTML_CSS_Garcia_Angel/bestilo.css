@@ -1,10 +1,11 @@
 body{
-    width: 80vw;
-    margin: 0 auto;
     font-size: 16px;
+    text-align: center;
 }
 
 header{
+    font-size: 3em;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -12,22 +13,37 @@ section{
     width: 40em;
     margin: 0 auto;
 }
+div{
+    margin: 2.5em;
+}
 #balon{
-    width: 20%;  
+    width: 10em;  
     transform: translateX(100px) rotate(360deg);
     transition: all 4s linear;
+    transform-origin: center center;
+    animation: rotacion-pelota 4s ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
 #balon:hover{
-    transform: translateX(0px) rotate(0deg);
+    animation-play-state: paused;
+}
+@keyframes rotacion-pelota{
+    from{
+        transform: translate(-100px, 0) rotate(0deg);
+    }to{
+        transform: translate(100px, 0) rotate(360deg);
+    }
 }
 #precio{
-    width: 25em;
     color: white;
-    font-size: 32px;
+    font-size: 2em;
     text-align: center;
+    padding: 1em;
     background-color: #1ab348;
-    border: 1em solid #1ab348;
     border-radius: 1em;
+    width: 25em;
+    margin: 0 auto;
 }
 #boton{
     width: 10em;
@@ -38,18 +54,21 @@ button{
     height: 3rem;
     color: white;
     background-color: steelblue;
+    cursor: pointer;
+    font-size: 15px;
     border: 0.1em solid black;
     border-radius: 0.2em;
     padding: 0.5em 2em;
+    transition: all 200ms 100ms, box-sadow 1s 100ms ease-in-out;
 }
 
 button:hover{   
-    width: 15rem; 
-    height: 5.5rem;
     color: white;
     background-color: red;
+    font-size: 20px;
     border: 0.1em solid black;
     border-radius: 0.2em;
     padding: 0.5em 2em;
-    box-shadow: 0px 0px 1em grey;
+    transform: scale(1.5);
+    box-shadow: 0px 0px 1.5em grey;
 }

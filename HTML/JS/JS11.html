@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+    <script>        
+        function activarReloj() { 
+            //Creo una variable Date()
+            var fecha = new Date();
+            //A esta le pido la hora, minutos y segundos.
+            var valorReloj = fecha.getHours() + ":" + fecha.getMinutes() + ":" + fecha.getSeconds();          
+            //Reescribo el valor del input con los valores obtenidos anteriormente
+            document.getElementById("reloj").value = valorReloj;
+            //Ejecuto la función cada segundo
+            setTimeout("activarReloj()", 1000);
+        }
+    </script>
+</head>
+
+<body onload="activarReloj()" style="height: 50vh; background-color: black; display: flex; justify-content: center; align-items: center;">
+    <input type="text" id="reloj" disabled style="width: 7em; background-color: rgb(32, 32, 32); color: rgb(255, 163, 25); font-size: 7em; text-align: center; border: 0; box-shadow: 0px 0px 1em rgb(62, 62, 62);">
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <script>
+        var fecha = new Date();
+        var fechaCompleta;
+
+        function fechar() {   
+            //Le pido a la fecha el día, mes (+1 porque da el número anterior) y año (en número)         
+            fechaCompleta = fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear();
+            //Reescribo el valor del primer input con los valores obtenidos
+            document.getElementById("fechaUno").value = fechaCompleta;
+
+            //Creo dos Arrays, uno para los meses y otro para los días
+            var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+            var diasSemana = new Array("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
+            //Pido el valor día del Array (-1 porque los Array empiezan desde 0), el día en número, el valor mes del Array y el año. 
+            fechaCompleta = diasSemana[fecha.getDay()-1] + ", " + fecha.getDate() + " de " + meses[fecha.getMonth()] + " de " + fecha.getFullYear();
+            //Reescribo el valor del segundo input con los valores obtenidos
+            document.getElementById("fechaDos").value = fechaCompleta;
+        }
+    </script>
+</head>
+
+<body>
+    <input id="fechaUno" disabled></input>
+    <input id="fechaDos" disabled></input>
+    <br>
+    <button onclick="fechar()" style="margin: 0.5em 0em; ">Mostrar fechas</button>
+</body>
+
+</html>
